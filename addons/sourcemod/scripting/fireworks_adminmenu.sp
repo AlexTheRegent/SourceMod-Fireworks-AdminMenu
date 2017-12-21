@@ -70,6 +70,7 @@ public OnPluginStart()
 		Fireworks_OnFireworksLoaded();
 	}
 	
+	CreateConVar("sm_fireworkds_adminmenu_version", PLUGIN_VERSION, "version of [Fireworks] AdminMenu plugin", FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	RegAdminCmd("sm_fireworks_adminmenu", Command_FireworksAdminMenu, ADMFLAG_ROOT);
 }
 
